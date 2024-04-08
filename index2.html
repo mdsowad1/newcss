@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --blue: #a627e1;
+            --white: #ffffff;
+        }
+        body {
+            background-color: var(--blue);
+        }
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+        button {
+            --blue: rgb(25, 0, 255);
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+        .brn {
+            background-color: #a627e1;
+            color: var(--blue);
+        }
+        
+        @media screen and (min-width: 450px) {
+            .container {
+                font-size: 50px;
+            }
+            :root {
+                --blue : lightblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime non ipsam alias odio soluta harum itaque blanditiis adipisci, repellat eveniet. Animi quas expedita nesciunt repellat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel a deleniti obcaecati eos at nostrum harum enim quo et, repudiandae maxime veniam nesciunt ex.
+    </p>
+    <button>Yes</button>
+    <button>No</button>
+    <button class="brn">Summit</button>
+   </div>
+</body>
+</html> 
